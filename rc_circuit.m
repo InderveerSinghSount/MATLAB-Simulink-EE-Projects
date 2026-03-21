@@ -1,0 +1,34 @@
+clc;
+clear;
+r=100;
+c=0.001;
+v0=12;
+tau=r*c;
+t=0:0.0001:5*tau;
+vcharge=v0*(1-exp(-t/tau));
+vdischarge=v0*exp(-t/tau);
+figure;
+subplot(2,1,1)
+plot(t,vcharge,"b--","LineWidth",2);
+hold on;
+yline(v0,"r--","LineWidth",2);
+yline(.632*v0,"LineWidth",2);
+xline(tau,"LineWidth",2);
+hold off;
+xlabel("time(s)");
+ylabel("voltage(v)");
+title(["rc charging |  τ = ", num2str(tau), ' sec']);
+legend("v capacitor","final voltage","63.2% mark","1 tau");
+grid on;
+
+subplot(2,1,2);
+plot(t,vdischarge,"r--","linewidth",2);
+hold on;
+yline(.368*v0,"g--","LineWidth",2);
+xline(tau,"k--","LineWidth",2);
+hold off;
+xlabel("time(s)");
+ylabel("voltage(v)");
+title(['RC Discharging  |  τ = ', num2str(tau), ' sec']);
+legend("v vapacitor","36.8% marak","1 tau");
+grid on;
