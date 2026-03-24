@@ -24,4 +24,4 @@ Simulation projects built using MATLAB R2025b, Simulink, and Simscape Electrical
 ## Tools
 MATLAB R2025b | Simulink | Simscape Electrical | Signal Processing Toolbox
 ## Connect
-LinkedIn: your-linkedin-here
+LinkedIn: [your-linkedin-here](https://www.linkedin.com/in/inderveer-singh-19b9073a1/)
